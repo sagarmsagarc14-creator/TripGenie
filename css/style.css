@@ -1,0 +1,852 @@
+
+
+/* =========================================
+   GENERAL
+========================================= */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background: #f5f7fa;
+    color: #222;
+}
+
+
+/* =========================================
+   NAVBAR
+========================================= */
+
+.navbar {
+    height: 70px;
+    background: white;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 8%;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.08);
+}
+
+.logo {
+    font-size: 28px;
+    font-weight: bold;
+}
+
+.logo span {
+    color: #0077ff;
+}
+
+.navbar nav {
+    display: flex;
+    align-items: center;
+    gap: 25px;
+}
+
+.navbar nav a {
+    text-decoration: none;
+    color: #333;
+    font-weight: 500;
+}
+
+.login-btn {
+    background: #0077ff;
+    color: white !important;
+    padding: 10px 20px;
+    border-radius: 6px;
+}
+
+
+/* =========================================
+   HERO
+========================================= */
+
+.hero {
+    min-height: 500px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    padding: 40px 20px;
+
+    background:
+        linear-gradient(
+            rgba(0, 0, 0, 0.45),
+            rgba(0, 0, 0, 0.45)
+        ),
+        url("https://images.unsplash.com/photo-1500530855697-b586d89ba3ee")
+        center / cover;
+}
+
+.hero-content {
+    max-width: 700px;
+    color: white;
+}
+
+.hero-content h1 {
+    font-size: 55px;
+    margin-bottom: 20px;
+}
+
+.hero-content p {
+    font-size: 20px;
+    line-height: 1.6;
+    margin-bottom: 30px;
+}
+
+.hero-btn {
+    display: inline-block;
+    background: #0077ff;
+    color: white;
+    text-decoration: none;
+    padding: 14px 30px;
+    border-radius: 7px;
+    font-size: 17px;
+}
+
+.hero-btn:hover {
+    background: #005fcc;
+}
+
+
+/* =========================================
+   FEATURES
+========================================= */
+
+.features {
+    padding: 70px 8%;
+    text-align: center;
+}
+
+.features h2 {
+    font-size: 32px;
+    margin-bottom: 45px;
+}
+
+.feature-container {
+    display: flex;
+    justify-content: center;
+    gap: 25px;
+    flex-wrap: wrap;
+}
+
+.feature-card {
+    background: white;
+    width: 300px;
+    padding: 35px 25px;
+    border-radius: 12px;
+
+    box-shadow:
+        0 4px 15px rgba(0, 0, 0, 0.08);
+
+    transition: 0.3s;
+}
+
+.feature-card:hover {
+    transform: translateY(-5px);
+}
+
+.icon {
+    font-size: 45px;
+    margin-bottom: 15px;
+}
+
+.feature-card h3 {
+    margin-bottom: 12px;
+}
+
+.feature-card p {
+    color: #666;
+    line-height: 1.5;
+}
+
+
+/* =========================================
+   FOOTER
+========================================= */
+
+footer {
+    background: #111;
+    color: white;
+    text-align: center;
+    padding: 25px;
+    margin-top: 30px;
+}
+
+
+/* =========================================
+   OLD AUTH FORM
+========================================= */
+
+.form-container {
+    width: 400px;
+    max-width: 90%;
+    margin: 80px auto;
+    background: white;
+    padding: 35px;
+    border-radius: 12px;
+
+    box-shadow:
+        0 5px 20px rgba(0, 0, 0, 0.1);
+
+    text-align: center;
+}
+
+.form-container h1 {
+    color: #0077ff;
+    margin-bottom: 10px;
+}
+
+.form-container h2 {
+    margin-bottom: 25px;
+}
+
+.form-container input {
+    width: 100%;
+    padding: 13px;
+    margin-bottom: 15px;
+    border: 1px solid #ddd;
+    border-radius: 6px;
+    font-size: 15px;
+}
+
+.form-container button {
+    width: 100%;
+    padding: 13px;
+    border: none;
+    border-radius: 6px;
+    background: #0077ff;
+    color: white;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+.form-container button:hover {
+    background: #005fcc;
+}
+
+.form-container a {
+    color: #0077ff;
+    text-decoration: none;
+}
+
+.message {
+    background: #e8f5e9;
+    color: #2e7d32;
+    padding: 10px;
+    border-radius: 5px;
+    margin-bottom: 15px;
+}
+
+
+/* =========================================
+   REGISTER PAGE
+========================================= */
+
+.register-page {
+    min-height: 100vh;
+    display: flex;
+    background: #f5f7fb;
+}
+
+
+/* =========================================
+   REGISTER LEFT SIDE
+========================================= */
+
+.register-left {
+    width: 50%;
+    min-height: 100vh;
+
+    display: flex;
+    align-items: center;
+
+    padding: 70px;
+
+    color: white;
+
+    background:
+        linear-gradient(
+            rgba(0, 75, 160, 0.78),
+            rgba(0, 30, 90, 0.88)
+        ),
+        url("https://images.unsplash.com/photo-1500534623283-312aade485b7")
+        center / cover;
+}
+
+.travel-content {
+    max-width: 520px;
+}
+
+.travel-logo {
+    font-size: 30px;
+    font-weight: bold;
+    margin-bottom: 70px;
+}
+
+.travel-logo span {
+    color: #7dd3fc;
+}
+
+.travel-content h1 {
+    font-size: 52px;
+    line-height: 1.12;
+    margin-bottom: 25px;
+}
+
+.travel-content p {
+    font-size: 17px;
+    line-height: 1.7;
+    color: #e0efff;
+    margin-bottom: 35px;
+}
+
+.travel-features {
+    display: flex;
+    flex-direction: column;
+    gap: 18px;
+}
+
+.travel-features div {
+    display: flex;
+    align-items: center;
+    gap: 14px;
+    font-size: 24px;
+}
+
+.travel-features span {
+    font-size: 16px;
+    color: white;
+}
+
+
+/* =========================================
+   REGISTER RIGHT SIDE
+========================================= */
+
+.register-right {
+    width: 50%;
+    min-height: 100vh;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    padding: 40px;
+}
+
+.register-card {
+    width: 100%;
+    max-width: 470px;
+
+    background: white;
+
+    padding: 45px;
+
+    border-radius: 20px;
+
+    box-shadow:
+        0 15px 50px rgba(0, 0, 0, 0.10);
+}
+
+.register-card h2 {
+    font-size: 30px;
+    margin-bottom: 8px;
+    color: #172033;
+}
+
+.register-subtitle {
+    color: #7b8494;
+    margin-bottom: 30px;
+}
+
+
+/* =========================================
+   MOBILE LOGO
+========================================= */
+
+.mobile-logo {
+    display: none;
+    font-size: 25px;
+    font-weight: bold;
+    color: #172033;
+    margin-bottom: 25px;
+}
+
+.mobile-logo span {
+    color: #0077ff;
+}
+
+
+/* =========================================
+   INPUT GROUP
+========================================= */
+
+.input-group {
+    margin-bottom: 20px;
+}
+
+.input-group label {
+    display: block;
+    font-size: 14px;
+    font-weight: 600;
+    color: #343b49;
+    margin-bottom: 8px;
+}
+
+.input-box {
+    display: flex;
+    align-items: center;
+
+    border: 1px solid #dce1e8;
+
+    border-radius: 10px;
+
+    padding: 0 14px;
+
+    transition: 0.3s;
+
+    background: #fafbfd;
+}
+
+.input-box:focus-within {
+    border-color: #0077ff;
+
+    box-shadow:
+        0 0 0 3px rgba(0, 119, 255, 0.10);
+}
+
+.input-box > span {
+    margin-right: 10px;
+    font-size: 17px;
+}
+
+.input-box input {
+    width: 100%;
+
+    border: none;
+    outline: none;
+
+    background: transparent;
+
+    padding: 14px 5px;
+
+    font-size: 15px;
+}
+
+
+/* =========================================
+   SHOW PASSWORD
+========================================= */
+
+.show-password {
+    border: none;
+    background: transparent;
+    cursor: pointer;
+    font-size: 16px;
+    padding: 5px;
+}
+
+
+/* =========================================
+   PASSWORD INFORMATION
+========================================= */
+
+.password-info {
+    font-size: 12px;
+    color: #8a92a0;
+
+    margin-top: -10px;
+    margin-bottom: 20px;
+}
+
+
+/* =========================================
+   REGISTER BUTTON
+========================================= */
+
+.register-btn {
+    width: 100%;
+
+    border: none;
+
+    padding: 15px;
+
+    border-radius: 10px;
+
+    background:
+        linear-gradient(
+            135deg,
+            #0077ff,
+            #0052cc
+        );
+
+    color: white;
+
+    font-size: 16px;
+
+    font-weight: 600;
+
+    cursor: pointer;
+
+    transition: 0.3s;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    gap: 10px;
+}
+
+.register-btn:hover {
+    transform: translateY(-2px);
+
+    box-shadow:
+        0 8px 20px rgba(0, 119, 255, 0.25);
+}
+
+
+/* =========================================
+   LOGIN TEXT
+========================================= */
+
+.login-text {
+    text-align: center;
+
+    margin-top: 25px;
+
+    color: #6d7480;
+
+    font-size: 14px;
+}
+
+.login-text a {
+    color: #0077ff;
+
+    font-weight: 600;
+
+    text-decoration: none;
+}
+
+.login-text a:hover {
+    text-decoration: underline;
+}
+
+
+/* =========================================
+   REGISTER MESSAGE
+========================================= */
+
+.register-message {
+    padding: 12px;
+
+    border-radius: 8px;
+
+    margin-bottom: 20px;
+
+    font-size: 14px;
+}
+
+.register-message.success {
+    background: #e8f8ef;
+    color: #16834b;
+}
+
+.register-message.error {
+    background: #fff0f0;
+    color: #d93025;
+}
+
+
+/* =========================================
+   SECURITY TEXT
+========================================= */
+
+.secure-text {
+    text-align: center;
+
+    margin-top: 25px;
+
+    font-size: 12px;
+
+    color: #9aa1ad;
+}
+
+
+/* =========================================
+   BACK HOME
+========================================= */
+
+.back-home {
+    position: absolute;
+
+    top: 25px;
+    left: 30px;
+
+    z-index: 10;
+
+    color: white;
+
+    text-decoration: none;
+
+    font-size: 14px;
+
+    background: rgba(0, 0, 0, 0.25);
+
+    padding: 9px 15px;
+
+    border-radius: 20px;
+
+    transition: 0.3s;
+}
+
+.back-home:hover {
+    background: rgba(0, 0, 0, 0.45);
+}
+
+
+/* =========================================
+   REGISTER MOBILE
+========================================= */
+
+@media (max-width: 900px) {
+
+    .register-left {
+        display: none;
+    }
+
+    .register-right {
+        width: 100%;
+        padding: 25px;
+    }
+
+    .mobile-logo {
+        display: block;
+    }
+
+    .back-home {
+        color: #0077ff;
+
+        background: white;
+
+        box-shadow:
+            0 3px 10px rgba(0, 0, 0, 0.1);
+    }
+}
+
+
+/* =========================================
+   SMALL MOBILE
+========================================= */
+
+@media (max-width: 500px) {
+
+    .register-card {
+        padding: 30px 22px;
+        border-radius: 15px;
+    }
+
+    .register-card h2 {
+        font-size: 25px;
+    }
+
+    .register-right {
+        padding: 15px;
+    }
+}
+
+
+/* =========================================
+   HOME PAGE MOBILE
+========================================= */
+
+@media (max-width: 700px) {
+
+    .navbar {
+        padding: 0 20px;
+    }
+
+    .navbar nav {
+        gap: 10px;
+    }
+
+    .navbar nav a:not(.login-btn) {
+        display: none;
+    }
+
+    .hero-content h1 {
+        font-size: 38px;
+    }
+
+    .hero-content p {
+        font-size: 17px;
+    }
+}
+/* =========================================
+   TRIPGENIE - FINAL UI POLISH
+========================================= */
+
+* {
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    color: #1e293b;
+    background: #f8fafc;
+}
+
+/* Smooth cards */
+.card,
+.destination-card,
+.trip-card,
+.feature-card,
+.stat-card,
+.action-card {
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.card:hover,
+.destination-card:hover,
+.trip-card:hover,
+.feature-card:hover,
+.stat-card:hover,
+.action-card:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 12px 30px rgba(15, 23, 42, 0.10);
+}
+
+/* Buttons */
+button,
+.btn,
+.plan-btn,
+.itinerary-btn,
+.action-btn {
+    transition: all 0.2s ease;
+}
+
+button:hover,
+.btn:hover,
+.plan-btn:hover,
+.itinerary-btn:hover,
+.action-btn:hover {
+    transform: translateY(-1px);
+}
+
+/* Form fields */
+input,
+select,
+textarea {
+    transition: border-color 0.2s ease, box-shadow 0.2s ease;
+}
+
+input:focus,
+select:focus,
+textarea:focus {
+    outline: none;
+    border-color: #2563eb;
+    box-shadow: 0 0 0 3px rgba(37, 99, 235, 0.12);
+}
+
+/* Images */
+img {
+    max-width: 100%;
+}
+
+/* Tables */
+table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+th {
+    font-weight: 600;
+}
+
+/* Empty states */
+.empty-state,
+.no-results {
+    text-align: center;
+    padding: 40px 20px;
+    color: #64748b;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+
+    .container {
+        width: 92%;
+        margin: auto;
+    }
+
+    .hero-container {
+        grid-template-columns: 1fr !important;
+    }
+
+    .features-grid,
+    .cards-grid,
+    .destination-grid,
+    .stats-grid {
+        grid-template-columns: 1fr !important;
+    }
+
+    .navbar {
+        padding: 12px 18px;
+    }
+
+    .hero {
+        padding: 50px 20px;
+    }
+
+    h1 {
+        font-size: 36px;
+    }
+
+    h2 {
+        font-size: 28px;
+    }
+
+    table {
+        font-size: 13px;
+    }
+
+    .table-container {
+        overflow-x: auto;
+    }
+
+    input,
+    select,
+    textarea,
+    button {
+        max-width: 100%;
+    }
+}
+
+@media (max-width: 480px) {
+
+    h1 {
+        font-size: 30px;
+    }
+
+    h2 {
+        font-size: 24px;
+    }
+
+    .hero {
+        padding: 35px 15px;
+    }
+
+    .card,
+    .destination-card,
+    .trip-card {
+        padding: 18px;
+    }
+}
